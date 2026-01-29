@@ -1,0 +1,71 @@
+
+//////////////////////////
+//Exo 1 — Split by Sign
+
+public void SplitBySign ( List<int> input 
+, out List<int> positives
+,out List<int> negatives )
+{
+    positives = new List<int>();
+    negatives = new List<int>();
+
+    for ( int i = 0; i<input.Count; i++){
+        if ( input[i]>= 0)
+        {
+            positives.Add(input[i]);
+        }
+        else
+        {
+            negatives.Add(input[i]);
+        }       
+    }
+    positives.Sort();
+    negatives.Sort();
+}
+
+//Exo 2 — Split by Threshold
+
+public void SplitByThreshold (List<int> input, int x
+, out List<int> lower 
+, out List<int> greaterOrEqual)
+{
+    lower = new List<int>();
+    greaterOrEqual = new List<int>();
+
+    for ( int i = 0; i<input.Count; i++)
+    {
+        if ( input[i]< x)
+        {
+            lower.Add(input[i]);
+        }
+        else
+        {
+            greaterOrEqual.Add(input[i]);
+        }
+    }
+    greaterOrEqual.Sort();
+    lower.Sort();
+}
+//Exo 3 — Split by Index Parity
+
+public void SplitByIndex ( List<int> input
+, out List<int> evenIndex
+, out List<int> oddIndex ){
+
+    evenIndex = new List<int>();
+    oddIndex = new List<int>();
+
+    for(int i = 0 ; i< input.Count ; i++){
+        if ( i % 2 ==0)
+        {
+            evenIndex.Add(input[i]);
+        }
+        else
+        {
+            oddIndex.Add(input[i]);
+        }
+    }
+
+    evenIndex.Sort();
+    oddIndex.Sort();
+}
