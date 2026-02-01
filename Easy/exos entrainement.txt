@@ -1,8 +1,72 @@
 
+exos 1 
+
+public List<int> NoZero ( List<int> MyList)
+{
+    for (int i = Mylist.Count - 1; i >= 0; i--)
+{
+    if (MyList[i] == 0)
+        MyList.RemoveAt(i);
+}
+return MyList;
+}
+
+exos 2 
+
+public int FindMiddle ( List<int> MyList)
+{
+    x = MyList.Count/2;
+    {
+        return MyList[x];
+    }
+
+}
+
+exos 3 
+
+public List<int> RemoveDuplicate ( List<int> MyList)
+{
+    for (int i = list.Count - 1; i >= 0; i--)
+{
+    if (Mylist[i] == Mylist[i-1])
+        list.RemoveAt(i);
+}
+return new List<int> MyList;
+}
+
+exos 4 
+
+public List<int> InversedList ( List<int> MyList)
+{
+    int left = MyList.Count;
+    int right = 0;
+
+    for (int i = 0; i < MyList.Count -1; i++)
+{
+        MyList[i]=left;
+        left = right;
+        right = MyList[i];
+}
+return new List<int> MyList;
+}
+
+exos 5
+
+public List<int> MergeTwoList ( List<int> MyList1, List<int> MyList2)
+{
+    List<int> Mylist = new List<int>;
+    
+    for (int i = 0; i < MyList2.Count; i++)
+{
+        Mylist.Add(i);
+}
+return new List<int> MyList;
+}
+
 //////////////////////////
 //Exo 1 — Split by Sign
 
-public void SplitBySign ( List<int> input 
+public void SplitBySign ( List<int> input
 , out List<int> positives
 ,out List<int> negatives )
 {

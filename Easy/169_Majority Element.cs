@@ -15,7 +15,7 @@ public class Solution
                 freq[nums[i]] = 1;
             }
 
-            if ( //freq[nums[i]]> nums.Length/2)
+            if ( )//freq[nums[i]]> nums.Length/2)
             {
                 return nums[i];
             }
