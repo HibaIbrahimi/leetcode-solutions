@@ -50,4 +50,29 @@ class Solution
 
         return true;
     }
+
+    public static bool IsValidPalindrome(string s)
+    {
+        if (s == null)
+            return false;
+
+        string clean = System.Text.RegularExpressions.Regex
+            .Replace(s, @"[^a-zA-Z0-9]", "")
+            .ToLower();
+
+        int left = 0;
+        int right = clean.Length - 1;
+
+        while (left < right)
+        {
+            if (clean[left] != clean[right])
+            {
+                return false;
+            }
+            left++;
+            right--;
+        }
+
+        return true;
+    }
 }
